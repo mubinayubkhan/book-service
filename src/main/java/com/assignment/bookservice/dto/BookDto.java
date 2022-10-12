@@ -11,6 +11,12 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 
+/**
+ * BookDTO.java
+ *
+ * Book resource Data Transfer Object
+ *
+ */
 @Data
 @Builder
 @AllArgsConstructor

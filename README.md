@@ -29,6 +29,20 @@ RUN:
     mvn spring-boot:run
 ```
 
+### Accessing the database (H2 Database)
+
+H2 Database is an in-memory database. It is used in this application for data persistence. 
+In order to access the database, we can access it in a web browser using the following URL, 
+
+    http://localhost:8080/api/h2-console/
+
+On the login screen, set the following properties and click **Connect**
+
+    Driver Class: org.h2.Driver
+    JDBC URL: jdbc:h2:mem:testdb
+    Username: sa
+    Password: <Blank>
+
 ### Functionality
 
 The following list defines the functionality of the application, 
@@ -42,7 +56,7 @@ It is a Spring-based REST Application exposing the following two entities,
 
         An Author has an id, first name, last name and list of books associated with the Author
 
-The Data is stored in the in-memory H2 Database. 
+The Data is stored in the in-memory **H2 Database** for persistence. 
 
 #### Exposing the API
 The Rest application facilitates the following REST API Calls,

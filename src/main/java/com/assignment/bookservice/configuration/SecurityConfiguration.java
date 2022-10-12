@@ -9,9 +9,21 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 
+/**
+ * SecurityConfiguration.java
+ *
+ * Configuring System Security Authentication Rules
+ *
+ */
 @Configuration
 public class SecurityConfiguration {
 
+    /**
+     * Setting up the following Security Configuration,
+     * 1. DELETE request only if user is Admin
+     * 2. All other requests are permitted without Authentication
+     * 3. Disable FrameOptions to enable H2-Console Database access
+     */
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.csrf()
@@ -21,9 +33,13 @@ public class SecurityConfiguration {
                 .anyRequest().permitAll()
                 .and()
                 .httpBasic();
+        http.headers().frameOptions().disable();
         return http.build();
     }
 
+    /**
+     * Setting up Admin Authentication Credentials
+     */
     @Bean
     public InMemoryUserDetailsManager userDetailsService() {
         UserDetails user = User

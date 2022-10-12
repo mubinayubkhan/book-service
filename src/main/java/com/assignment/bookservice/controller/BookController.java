@@ -19,7 +19,11 @@ import javax.validation.Valid;
 import static java.lang.String.format;
 
 /**
- * Book controller class for fetching, creating and deleting book resource.
+ * BookController.java
+ *
+ * RestController handling Rest API Calls (GET, POST & DELETE)
+ * for Book resource
+ *
  */
 @Slf4j
 @RestController

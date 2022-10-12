@@ -19,6 +19,12 @@ import java.util.stream.Collectors;
 
 import static java.lang.String.format;
 
+/**
+ * AuthorService.java
+ *
+ * Service class providing business functionality for Author resource
+ *
+ */
 @Slf4j
 @Service
 @AllArgsConstructor

@@ -15,6 +15,12 @@ import java.util.Optional;
 
 import static java.lang.String.format;
 
+/**
+ * BookService.java
+ *
+ * Service class providing business functionality for Book resource
+ *
+ */
 @Slf4j
 @Service
 @AllArgsConstructor

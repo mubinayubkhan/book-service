@@ -7,6 +7,12 @@ import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.NotBlank;
 
+/**
+ * AuthorDTO.java
+ *
+ * Author resource Data Transfer Object
+ *
+ */
 @Data
 @Builder
 @NoArgsConstructor

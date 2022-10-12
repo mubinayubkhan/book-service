@@ -19,7 +19,11 @@ import static java.lang.String.format;
 import static org.springframework.util.CollectionUtils.isEmpty;
 
 /**
- * Author controller class for fetching, creating and deleting author resource.
+ * AuthorController.java
+ *
+ * RestController handling Rest API Calls (GET, POST & DELETE)
+ * for Author resource
+ *
  */
 @Slf4j
 @RestController

@@ -7,6 +7,12 @@ import lombok.Data;
 import java.math.BigDecimal;
 import java.util.List;
 
+/**
+ * AuthorResponseDTO.java
+ *
+ * Data Transfer Object handling response of Author resource
+ *
+ */
 @Data
 @Builder
 public class AuthorResponseDto {
